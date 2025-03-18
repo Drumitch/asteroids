@@ -5,7 +5,10 @@ from player import Player
 from asteroid import Asteroid
 from asteroidfield import AsteroidField
 from shot import Shot
+<<<<<<< HEAD
 from text_functions import game_over
+=======
+>>>>>>> refs/remotes/origin/main
 
 def main():
     pygame.init()
@@ -29,7 +32,10 @@ def main():
     asteroid_field = AsteroidField()
     player = Player(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, PLAYER_RADIUS)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
     black = (0, 0, 0)
     while True:
         for event in pygame.event.get():
@@ -53,11 +59,16 @@ def main():
         # Checks for asteroid-player collision and ends the game if True
         for asteroid in asteroids:
             if asteroid.collision(player):
+<<<<<<< HEAD
                 # Create a text object to display "Game Over" to the center of the screen
                 game_over(text, screen)
                 pygame.display.flip()
 
                 pygame.time.wait(2000)
+=======
+                print("Game Over!")
+                pygame.time.delay(2000)
+>>>>>>> refs/remotes/origin/main
                 pygame.quit()
 
         for asteroid in asteroids:
